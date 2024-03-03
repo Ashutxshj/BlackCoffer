@@ -1,0 +1,27 @@
+1.Approach
+
+For web scraper
+a)A function to convert the links of csv files into usable links
+b)A function to extract article title and text and nothing else
+c)A for loop to do it for every link
+d)A function to make save the extracted data in a new text files with their "URL_ID" as their names
+
+For data analysis
+a)A function to extract article title and text and save it in a text doc called "DATA".
+b)Feature engineer and analyse the data to extract the given constraints from "DATA" on an excel file.
+
+2.How to run the file
+a)First run the Main.py file to run the web scraper
+b)Next run the Data_Analysis.py file to get the analysed constraints as an excel file
+
+
+3.Required Dependencies
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+import nltk
+from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.corpus import stopwords
+from nltk.stem import PorterStemmer
+import pandas as pd
+import re
